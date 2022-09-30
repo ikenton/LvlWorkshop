@@ -39,7 +39,7 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2.UP) #move character and detect/handle collisions
 	var just_landed = is_on_floor() and was_in_air
 	if just_landed:
-		$AnimatedSprite.animation = "Run"
+		$AnimatedSprite.animation = "run"
 		$AnimatedSprite.frame = 1
 func apply_gravity():
 	velocity.y += gravity
@@ -51,4 +51,5 @@ func apply_friction():
 func apply_acceleration(amount):
 	velocity.x = move_toward(velocity.x, max_speed * amount, acceleration) 
 	pass
-	
+
+
