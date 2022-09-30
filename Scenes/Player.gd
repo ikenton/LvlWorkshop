@@ -60,3 +60,7 @@ func _on_OutOfBounds_body_entered(body):
 func _on_WinCondition_body_entered(body):
 	get_tree().change_scene("res://Scenes/Platform.tscn")
 	print("DEBUG: YOU WIN")
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene("res://Scenes/Platform.tscn")
