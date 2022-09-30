@@ -38,8 +38,8 @@ jump={
 
 [layer_names]
 
-2d_render/layer_1="Player"
-2d_render/layer_2="Floor"
+2d_render/layer_1="World"
+2d_render/layer_2="players"
 
 [physics]
 
