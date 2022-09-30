@@ -53,3 +53,5 @@ func apply_acceleration(amount):
 	pass
 
 
+func _on_OutOfBounds_body_entered(body):
+	get_tree().change_scene("res://Scenes/Platform.tscn")
