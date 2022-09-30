@@ -55,3 +55,8 @@ func apply_acceleration(amount):
 
 func _on_OutOfBounds_body_entered(body):
 	get_tree().change_scene("res://Scenes/Platform.tscn")
+
+
+func _on_WinCondition_body_entered(body):
+	get_tree().change_scene("res://Scenes/Platform.tscn")
+	print("YOU WIN")
