@@ -260,11 +260,12 @@ points = PoolVector2Array( 0, 0, 18, 0, 18, 18, 0, 18 )
 [node name="Level" type="Node2D"]
 position = Vector2( 536, 249 )
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 48, 47 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -120, 23 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 0.6, 0.6 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
